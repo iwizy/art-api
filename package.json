@@ -7,13 +7,15 @@
   "author": "Alexander Agafonov <agafonov.alexander@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development node ./src/index.js"
+    "dev:build": "webpack -w",
+    "dev": "cross-env NODE_ENV=development node dist/index.bundle.js"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
