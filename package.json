@@ -1,0 +1,9 @@
+{
+  "name": "art-api",
+  "version": "0.0.1",
+  "description": "REST API for art collaborators portal",
+  "main": "index.js",
+  "repository": "https://github.com/iwizy/art-api.git",
+  "author": "Alexander Agafonov <agafonov.alexander@gmail.com>",
+  "license": "MIT"
+}
