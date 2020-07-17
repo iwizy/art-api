@@ -8,10 +8,8 @@ app.listen(PORT, err => {
   } else {
     console.log(
       `Server running on port: ${PORT}
-      -- 
-      - Running on ${process.env.NODE_ENV}
-      -- 
-      - Make something great!`
+      Running on ${process.env.NODE_ENV} 
+      visit: http://localhost:${PORT}`
     );
   }
 });
