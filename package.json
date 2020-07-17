@@ -6,6 +6,9 @@
   "repository": "https://github.com/iwizy/art-api.git",
   "author": "Alexander Agafonov <agafonov.alexander@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node ./src/index.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
