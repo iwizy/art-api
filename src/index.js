@@ -14,11 +14,16 @@ app.get('/', (req, res) => {
   });
 });
 apiRoutes(app);
-const PORT = process.env.PORT || 3000;
-let listen = app.listen(constants.PORT, err => {
+app.listen(constants.PORT, err => {
   if (err) {
     throw err;
   } else {
-    console.log(`Server running on port: ${constants.PORT} --- Running on ${process.env.NODE_ENV} --- Make something great.!`)
+    console.log(`
+      Server running on port: ${constants.PORT}
+      ---
+      Running on ${process.env.NODE_ENV}
+      ---
+      Make something great
+    `);
   }
 });
